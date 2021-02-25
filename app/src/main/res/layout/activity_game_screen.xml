@@ -22,6 +22,7 @@
 
 
     <ImageView
+        android:tag="0"
         android:id="@+id/grid0"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -37,6 +38,7 @@
 
 
     <ImageView
+        android:tag="1"
         android:id="@+id/grid1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -50,6 +52,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="2"
         android:id="@+id/grid2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -61,6 +64,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="3"
         android:id="@+id/grid3"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -72,6 +76,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="4"
         android:id="@+id/grid4"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -83,6 +88,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="5"
         android:id="@+id/grid5"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -94,6 +100,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="6"
         android:id="@+id/grid6"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -105,6 +112,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="7"
         android:id="@+id/grid7"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -116,6 +124,7 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
+        android:tag="8"
         android:id="@+id/grid8"
         android:layout_width="0dp"
         android:layout_height="0dp"

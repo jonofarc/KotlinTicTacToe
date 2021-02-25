@@ -5,4 +5,5 @@
     <string name="single_player">single player</string>
     <string name="two_players">two players</string>
     <string name="grid_content_description">Cross or cicle</string>
+    <string name="player_won">Player %1$d won.</string>
 </resources>
