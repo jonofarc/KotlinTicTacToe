@@ -7,7 +7,7 @@
     tools:context=".GameScreenActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gameModeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
@@ -22,7 +22,7 @@
 
 
     <ImageView
-        android:id="@+id/grid"
+        android:id="@+id/grid0"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/grid"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@drawable/ic_close_24px" />
