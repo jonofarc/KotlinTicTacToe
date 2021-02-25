@@ -6,4 +6,6 @@
     <string name="two_players">two players</string>
     <string name="grid_content_description">Cross or cicle</string>
     <string name="player_won">Player %1$d won.</string>
+    <string name="play_again">Play again</string>
+    <string name="restart">Restart</string>
 </resources>

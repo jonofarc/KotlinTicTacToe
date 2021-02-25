@@ -22,11 +22,11 @@
 
 
     <ImageView
-        android:tag="0"
         android:id="@+id/grid0"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="0"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/dividerOne"
@@ -34,15 +34,12 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
 
-    <!-- tic tac toe Grid-->
-
-
     <ImageView
-        android:tag="1"
         android:id="@+id/grid1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="1"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -52,11 +49,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="2"
         android:id="@+id/grid2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="2"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="@+id/dividerOne"
         app:layout_constraintStart_toEndOf="@+id/grid1"
@@ -64,11 +61,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="3"
         android:id="@+id/grid3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="3"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/dividerOne"
@@ -76,11 +73,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="4"
         android:id="@+id/grid4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="4"
         app:layout_constraintBottom_toTopOf="@+id/dividerTwo"
         app:layout_constraintEnd_toStartOf="@+id/dividerFour"
         app:layout_constraintStart_toEndOf="@+id/grid3"
@@ -88,11 +85,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="5"
         android:id="@+id/grid5"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="5"
         app:layout_constraintBottom_toTopOf="@+id/dividerTwo"
         app:layout_constraintEnd_toEndOf="@+id/dividerTwo"
         app:layout_constraintStart_toEndOf="@+id/grid4"
@@ -100,11 +97,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="6"
         android:id="@+id/grid6"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="6"
         app:layout_constraintBottom_toBottomOf="@+id/dividerThree"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/dividerTwo"
@@ -112,11 +109,11 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="7"
         android:id="@+id/grid7"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="7"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/dividerFour"
         app:layout_constraintStart_toEndOf="@+id/grid3"
@@ -124,16 +121,18 @@
         tools:srcCompat="@drawable/ic_close_24px" />
 
     <ImageView
-        android:tag="8"
         android:id="@+id/grid8"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/grid_content_description"
+        android:tag="8"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="@+id/dividerTwo"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/grid5"
         tools:srcCompat="@drawable/ic_close_24px" />
+
+    <!-- tic tac toe Grid-->
 
     <View
         android:id="@+id/dividerOne"
@@ -220,6 +219,18 @@
         app:layout_constraintGuide_percent="0.3" />
 
     <!-- end grid -->
+
+
+    <Button
+        android:id="@+id/restartBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/play_again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,6 @@ package com.example.tictactoe
 
 import android.app.Activity
 import android.content.Intent
-import android.widget.Toast
 
 interface MainActivityRepository {
     fun singlePlayerGame()
