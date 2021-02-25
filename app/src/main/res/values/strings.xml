@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="author_name">Jonathan Maldonado</string>
+    <string name="game_name">kotlin TicTacToe</string>
+    <string name="single_player">single player</string>
+    <string name="two_players">two players</string>
+    <string name="grid_content_description">Cross or cicle</string>
+</resources>
