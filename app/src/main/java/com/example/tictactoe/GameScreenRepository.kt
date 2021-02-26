@@ -24,6 +24,8 @@ class GameScreenImpl(private val activity: Activity, private var gameModeTV: Tex
     private var singlePlayerGamer = false
     private var twoPlayerGamer = false
 
+    private var cpuStrategy = -1
+
     private var xTurn = true
     private var winConditions = mutableListOf<List<String>>()
     private var xMoves = mutableListOf<String>()
@@ -131,7 +133,7 @@ class GameScreenImpl(private val activity: Activity, private var gameModeTV: Tex
     }
 
     /**
-     * function to generate a CPu move this is where any kind of AI would help
+     * function to generate a CPU move
      */
 
     private fun checkCpuMove() {
@@ -140,26 +142,73 @@ class GameScreenImpl(private val activity: Activity, private var gameModeTV: Tex
         Thread {
             Thread.sleep(200)
             if (singlePlayerGamer && !gameFinished && !xTurn && movesDone.size < 9) {
-                var validMove = false
-                var cpuMove = 0
-                while (!validMove) {
-                    cpuMove = (0..8).random()
-                    if (!movesDone.contains(cpuMove.toString())) {
-                        validMove = true
-                    }
-                }
 
+                var cpuMove = calculateCPUMove()
 
                 val view = getViewsByTag(root, cpuMove.toString())
                 activity.runOnUiThread {
                     setPossition(view as ImageView, cpuMove)
                 }
 
-
             }
         }.start()
 
+    }
 
+    private fun calculateCPUMove(): Int {
+        var cpuMove = 0
+        var validMove = false
+        var trieToGetMove = 0;
+        while (!validMove) {
+            trieToGetMove++
+            cpuMove = generateMove()
+            if (!movesDone.contains(cpuMove.toString())) {
+                validMove = true
+            }
+        }
+
+        return cpuMove
+
+    }
+
+    private fun generateMove(): Int {
+
+        var result = 0
+        var triesToGetStrategy = 0;
+        if(cpuStrategy < 0){
+            cpuStrategy = (0..7).random()
+        }
+
+        var validStrategy = false
+        //pick and check if its a valid strategy
+        do {
+
+
+            validStrategy = true
+            winConditions[cpuStrategy].forEach { move ->
+                if(xMoves.contains(move)){
+                    validStrategy = false
+                }
+            }
+
+            if(!validStrategy){
+                cpuStrategy = (0..7).random()
+            }
+
+            triesToGetStrategy++
+
+            //if after 100 tries cant find a working strategy just do random move
+            if(triesToGetStrategy > 100){
+                validStrategy = true
+            }
+
+
+        } while (!validStrategy)
+
+        result = winConditions[cpuStrategy][(0..2).random()].toInt()
+
+
+        return result
     }
 
     override fun setWinUI(player: Int) {
