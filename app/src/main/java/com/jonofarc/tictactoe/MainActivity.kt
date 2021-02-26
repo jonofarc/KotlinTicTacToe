@@ -1,4 +1,4 @@
-package com.example.tictactoe
+package com.jonofarc.tictactoe
 
 //import kotlinx.android.synthetic.main.activity_main.*
 

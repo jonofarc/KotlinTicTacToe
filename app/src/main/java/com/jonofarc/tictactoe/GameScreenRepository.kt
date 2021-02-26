@@ -1,4 +1,4 @@
-package com.example.tictactoe
+package com.jonofarc.tictactoe
 
 import android.app.Activity
 import android.view.View
